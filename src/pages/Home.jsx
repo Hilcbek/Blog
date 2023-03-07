@@ -19,7 +19,7 @@ export const Home = () => {
     }
     useEffect(() => {
       getBlog()
-    },[])
+    })
     let DeleteDocs = async (id) => {
         await deleteDoc(doc(db,"posts",id));
       getBlog()
