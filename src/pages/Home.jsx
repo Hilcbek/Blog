@@ -24,8 +24,6 @@ export const Home = () => {
         await deleteDoc(doc(db,"posts",id));
       getBlog()
     }
-    let [titleUpdate,setTitleUpdate] = useState('')
-    let [postUpdate,setPostUpdate] = useState('')
   return (
       <div className='w-full max-h-[87vh] overflow-scroll p-2 grid xs:grid-cols-1 md:grid-cols-2'>
         {
